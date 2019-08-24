@@ -1,0 +1,24 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main(int argc, char *argv[]) {
+	
+	float m, n;
+	cout << "Enter a number with no more than 3 decimal places (any additional decimal places will be truncated): ";
+	cin >> m >> fixed >> setprecision(3);
+	
+		cout << "Remainder when divided by 1: " << fmod(m, 1) << endl << endl;
+		
+		if (fmod(m, 1) != 0) {
+			cout << "You entered a non-whole number.";
+		}
+		
+		else {
+			cout << "You entered a whole number.";
+		}
+
+	return 0;
+}
